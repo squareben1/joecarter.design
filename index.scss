@@ -1,0 +1,79 @@
+$breakpoint-tablet: 767px;
+$breakpoint-tablet-horizontal: 1023px;
+
+// TODO: Add mobile landscape version. Add iPad Pro.
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #b5bcc0;
+
+  .app {
+    color: black;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .header {
+    font-size: 34vw;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    position: relative;
+    right: 10px;
+    line-height: 0.9em;
+    letter-spacing: -0.04em;
+  }
+
+  .emailAddress {
+    padding-top: 1%;
+    padding-left: 5px;
+    font-size: 15.1vw;
+    letter-spacing: -0.03em;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    position: absolute;
+  }
+
+  @media (min-width: $breakpoint-tablet) {
+    .header {
+      font-size: 26vw;
+    }
+    .emailAddress {
+      font-size: 12vw;
+    }
+  }
+
+  @media (min-width: $breakpoint-tablet-horizontal) {
+    .app {
+      display: flex;
+      flex-direction: column;
+      left: 1%;
+    }
+    .header {
+      font-size: 19.5vw;
+      writing-mode: horizontal-tb;
+      transform: unset;
+      position: relative;
+    }
+    .emailAddress {
+      font-size: 9vw;
+      letter-spacing: -0.04em;
+      writing-mode: horizontal-tb;
+      transform: unset;
+      left: 0px;
+      position: absolute;
+      bottom: 0px;
+      top: unset;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.12",
+    "sass": "^1.35.2"
+  },
+  "scripts": {
+    "css": "node-sass --include-path scss index.scss css/index.css",
+    "watch": "nodemon -e scss -x 'yarn css'"
+  }
+}
