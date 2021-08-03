@@ -23,4 +23,4 @@ artifacts:
   files:
     - css/index.css
     - index.html
-    - /public/favicon.ico
+    - public/favicon.ico
