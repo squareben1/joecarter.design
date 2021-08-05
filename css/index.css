@@ -36,27 +36,27 @@ body {
     writing-mode: vertical-rl;
     transform: rotate(180deg);
     position: absolute; }
-  @media (min-width: 767px) {
+  @media (min-width: 767px), (min-height: 1023px) {
     body .header {
       font-size: 25vw; }
     body .emailAddress {
-      font-size: 12vw; } }
+      font-size: 11.5vw; } }
   @media (min-width: 1023px) {
     body .app {
       display: flex;
       flex-direction: column;
       left: 1%; }
     body .header {
-      font-size: 19.5vw;
+      font-size: 18.5vw;
       writing-mode: horizontal-tb;
       transform: unset;
       position: relative; }
     body .emailAddress {
-      font-size: 9vw;
+      font-size: 8.5vw;
       letter-spacing: -0.04em;
       writing-mode: horizontal-tb;
       transform: unset;
       left: 0px;
       position: absolute;
-      bottom: 0px;
+      bottom: 5px;
       top: unset; } }

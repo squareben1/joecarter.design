@@ -47,12 +47,13 @@ body {
     position: absolute;
   }
 
-  @media (min-width: $breakpoint-tablet) {
+  @media (min-width: $breakpoint-tablet),
+    (min-height: $breakpoint-tablet-horizontal) {
     .header {
       font-size: 25vw;
     }
     .emailAddress {
-      font-size: 12vw;
+      font-size: 11.5vw;
     }
   }
 
@@ -63,19 +64,19 @@ body {
       left: 1%;
     }
     .header {
-      font-size: 19.5vw;
+      font-size: 18.5vw;
       writing-mode: horizontal-tb;
       transform: unset;
       position: relative;
     }
     .emailAddress {
-      font-size: 9vw;
+      font-size: 8.5vw;
       letter-spacing: -0.04em;
       writing-mode: horizontal-tb;
       transform: unset;
       left: 0px;
       position: absolute;
-      bottom: 0px;
+      bottom: 5px;
       top: unset;
     }
   }
