@@ -1,56 +1,62 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "CarterSans-DisplayHeadlineRegular", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #b5bcc0; }
+
+@font-face {
+  body {
+    font-family: "CarterSans-DisplayHeadlineRegular";
+    src: url("public/CarterSans-DisplayHeadlineRegular.woff") format("woff");
+    src: url("public/CarterSans-DisplayHeadlineRegular.woff2") format("woff2"); } }
   body .app {
-    color: black;
+    color: #000000;
     position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0; }
   body .header {
-    font-size: 34vw;
+    font-size: 33vw;
     writing-mode: vertical-rl;
     transform: rotate(180deg);
     position: relative;
     right: 10px;
-    line-height: 0.9em;
+    line-height: 0.95em;
     letter-spacing: -0.04em; }
   body .emailAddress {
     padding-top: 1%;
     padding-left: 5px;
     font-size: 15.1vw;
-    letter-spacing: -0.03em;
+    letter-spacing: -0.04em;
     right: 0px;
     top: 0px;
     bottom: 0px;
     writing-mode: vertical-rl;
     transform: rotate(180deg);
     position: absolute; }
-  @media (min-width: 767px) {
+  @media (min-width: 767px), (min-height: 1023px) {
     body .header {
-      font-size: 26vw; }
+      font-size: 25vw; }
     body .emailAddress {
-      font-size: 12vw; } }
+      font-size: 11.5vw; } }
   @media (min-width: 1023px) {
     body .app {
       display: flex;
       flex-direction: column;
       left: 1%; }
     body .header {
-      font-size: 19.5vw;
+      font-size: 18.5vw;
       writing-mode: horizontal-tb;
       transform: unset;
       position: relative; }
     body .emailAddress {
-      font-size: 9vw;
+      font-size: 8.5vw;
       letter-spacing: -0.04em;
       writing-mode: horizontal-tb;
       transform: unset;
       left: 0px;
       position: absolute;
-      bottom: 0px;
+      bottom: 5px;
       top: unset; } }
